@@ -50,8 +50,7 @@ const Home = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <a
                 href="#projects"
-                onClick={(e) => {
-                  e.preventDefault();
+                onClick={() => {
                   const element = document.getElementById('projects');
                   if (element) {
                     element.scrollIntoView({ behavior: 'smooth' });
@@ -67,8 +66,7 @@ const Home = () => {
               </a>
               <a
                 href="#contact"
-                onClick={(e) => {
-                  e.preventDefault();
+                onClick={() => {
                   const element = document.getElementById('contact');
                   if (element) {
                     element.scrollIntoView({ behavior: 'smooth' });
