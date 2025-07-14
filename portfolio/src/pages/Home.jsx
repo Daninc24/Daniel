@@ -27,7 +27,7 @@ const Home = () => {
   return (
     <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-cyan-50 via-white to-red-50 relative overflow-hidden">
       {/* Background decoration */}
-      <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
+      <div className="absolute inset-0 bg-grid-pattern opacity-5 pointer-events-none"></div>
       
       <div className="max-w-6xl mx-auto px-4 py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
