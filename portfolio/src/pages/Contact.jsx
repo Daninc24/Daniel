@@ -194,6 +194,16 @@ const Contact = () => {
                 </svg>
                 danmailur8@gmail.com
               </a>
+              <a
+                href="tel:+254791991154"
+                className="inline-flex items-center bg-white bg-opacity-20 text-black px-6 py-3 rounded-lg hover:bg-opacity-30 transition-all duration-300 font-medium focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-blue-600 mt-4"
+                aria-label="Call +254791991154"
+              >
+                <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H5a2 2 0 01-2-2V5zm0 10a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H5a2 2 0 01-2-2v-2zm10-10a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zm0 10a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+                </svg>
+                +254791991154
+              </a>
             </div>
 
             {/* Social Links */}
