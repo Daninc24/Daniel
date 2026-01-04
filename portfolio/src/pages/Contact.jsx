@@ -70,7 +70,7 @@ const Contact = () => {
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Get in Touch</h2>
           <div className="w-24 h-1 bg-cyan-600 mx-auto mb-6"></div>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Interested in working together or have a question? I'd love to hear from you!
+            Ready to discuss your next project? With 2+ years of MERN stack expertise and 30+ successful projects, I'm here to bring your ideas to life.
           </p>
         </div>
 
@@ -182,7 +182,7 @@ const Contact = () => {
             <div className="bg-gradient-to-br from-cyan-600 to-red-600 rounded-2xl p-6 md:p-8 text-white hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
               <h3 className="text-2xl font-bold mb-6">Let's Connect</h3>
               <p className="text-lg mb-6 opacity-90">
-                Ready to start a conversation? Drop me an email and I'll get back to you as soon as possible.
+                Experienced MERN stack developer with 2+ years and 30+ projects delivered. Let's discuss how I can help bring your vision to life.
               </p>
               <a
                 href="mailto:danmailur8@gmail.com"
@@ -230,7 +230,7 @@ const Contact = () => {
             <div className="bg-gray-50 rounded-2xl p-6 md:p-8 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
               <h4 className="text-lg font-semibold text-gray-900 mb-3 md:mb-4">Available for Opportunities</h4>
               <p className="text-gray-600 mb-4 md:mb-6">
-                I'm currently open to freelance projects, full-time positions, and exciting collaborations.
+                Senior MERN stack developer available for challenging projects and long-term partnerships. Let's build something amazing together.
               </p>
               <div className="flex flex-wrap gap-2 md:gap-3">
                 <span className="bg-cyan-100 text-cyan-800 px-3 py-1 rounded-full text-sm font-medium">

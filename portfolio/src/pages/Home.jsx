@@ -44,7 +44,7 @@ const Home = () => {
             </h1>
             
             <p className="text-xl md:text-2xl text-gray-700 mb-8 leading-relaxed">
-              MERN Stack Developer passionate about creating innovative web applications with MongoDB, Express, React, and Node.js.
+              Senior MERN Stack Developer with 2+ years of experience building scalable web applications and delivering 30+ successful projects using MongoDB, Express, React, and Node.js.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -101,16 +101,16 @@ const Home = () => {
             {/* Quick stats */}
             <div className="flex justify-center lg:justify-start gap-4 md:gap-8 mt-8 md:mt-12">
               <div className="text-center hover:transform hover:scale-110 transition-transform duration-300">
-                <div className="text-xl md:text-2xl font-bold text-cyan-600">1+</div>
+                <div className="text-xl md:text-2xl font-bold text-cyan-600">2+</div>
                 <div className="text-xs md:text-sm text-gray-600">Years Experience</div>
               </div>
               <div className="text-center hover:transform hover:scale-110 transition-transform duration-300">
-                <div className="text-xl md:text-2xl font-bold text-red-600">10+</div>
+                <div className="text-xl md:text-2xl font-bold text-red-600">30+</div>
                 <div className="text-xs md:text-sm text-gray-600">Projects Completed</div>
               </div>
               <div className="text-center hover:transform hover:scale-110 transition-transform duration-300">
-                <div className="text-xl md:text-2xl font-bold text-black">4</div>
-                <div className="text-xs md:text-sm text-gray-600">MERN Stack</div>
+                <div className="text-xl md:text-2xl font-bold text-black">100%</div>
+                <div className="text-xs md:text-sm text-gray-600">Client Satisfaction</div>
               </div>
             </div>
           </div>
