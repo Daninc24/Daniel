@@ -122,20 +122,20 @@ const Testimonials = () => {
         <div className="bg-gradient-to-br from-cyan-600 to-red-600 rounded-2xl p-6 md:p-8 text-white mb-16">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 text-center">
             <div className="hover:transform hover:scale-110 transition-transform duration-300">
-              <div className="text-3xl font-bold mb-2">1+</div>
+              <div className="text-3xl font-bold mb-2">2+</div>
               <div className="text-cyan-100">Years Experience</div>
             </div>
             <div className="hover:transform hover:scale-110 transition-transform duration-300">
-              <div className="text-3xl font-bold mb-2">10+</div>
+              <div className="text-3xl font-bold mb-2">30+</div>
               <div className="text-cyan-100">Projects Completed</div>
             </div>
             <div className="hover:transform hover:scale-110 transition-transform duration-300">
-              <div className="text-3xl font-bold mb-2">4</div>
-              <div className="text-cyan-100">MERN Stack</div>
+              <div className="text-3xl font-bold mb-2">100%</div>
+              <div className="text-cyan-100">Client Satisfaction</div>
             </div>
             <div className="hover:transform hover:scale-110 transition-transform duration-300">
-              <div className="text-3xl font-bold mb-2">100%</div>
-              <div className="text-cyan-100">Code Quality</div>
+              <div className="text-3xl font-bold mb-2">24/7</div>
+              <div className="text-cyan-100">Support Available</div>
             </div>
           </div>
         </div>

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -9,6 +10,11 @@ const Contact = () => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null);
+
+  // EmailJS configuration - You'll need to replace these with your actual EmailJS credentials
+  const EMAILJS_SERVICE_ID = 'your_service_id'; // Replace with your EmailJS service ID
+  const EMAILJS_TEMPLATE_ID = 'your_template_id'; // Replace with your EmailJS template ID
+  const EMAILJS_PUBLIC_KEY = 'your_public_key'; // Replace with your EmailJS public key
 
   const socialLinks = [
     {
@@ -52,15 +58,42 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
-    setTimeout(() => {
+    try {
+      // Initialize EmailJS (you only need to do this once in your app)
+      emailjs.init(EMAILJS_PUBLIC_KEY);
+      
+      // Prepare template parameters
+      const templateParams = {
+        from_name: formData.name,
+        from_email: formData.email,
+        subject: formData.subject,
+        message: formData.message,
+        to_email: 'danmailur8@gmail.com', // Your email address
+      };
+
+      // Send email using EmailJS
+      const result = await emailjs.send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        templateParams
+      );
+
+      console.log('Email sent successfully:', result);
       setIsSubmitting(false);
       setSubmitStatus('success');
       setFormData({ name: "", email: "", subject: "", message: "" });
       
-      // Reset status after 3 seconds
-      setTimeout(() => setSubmitStatus(null), 3000);
-    }, 1500);
+      // Reset status after 5 seconds
+      setTimeout(() => setSubmitStatus(null), 5000);
+      
+    } catch (error) {
+      console.error('Failed to send email:', error);
+      setIsSubmitting(false);
+      setSubmitStatus('error');
+      
+      // Reset status after 5 seconds
+      setTimeout(() => setSubmitStatus(null), 5000);
+    }
   };
 
   return (
@@ -86,6 +119,17 @@ const Contact = () => {
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   Message sent successfully! I'll get back to you soon.
+                </div>
+              </div>
+            )}
+
+            {submitStatus === 'error' && (
+              <div className="mb-6 p-4 bg-red-100 border border-red-400 text-red-700 rounded-lg">
+                <div className="flex items-center">
+                  <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
+                  </svg>
+                  Failed to send message. Please try again or contact me directly at danmailur8@gmail.com
                 </div>
               </div>
             )}
