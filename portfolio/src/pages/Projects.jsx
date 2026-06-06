@@ -10,7 +10,7 @@ const projects = [
     description: "A comprehensive e-commerce solution with React frontend, Node.js backend, Express API, and MongoDB. Features include user authentication, product management, payment integration, and admin dashboard.",
     technologies: ["React", "Redux", "Node.js", "Express", "MongoDB", "Mongoose", "Stripe"],
     image: ecomImage,
-    link: "https://myshop-git-main-daniel-mailus-projects.vercel.app/",
+    link: "https://africommerce-1-frontend.onrender.com/",
     github: "https://github.com/Daninc24/myshop.git",
     status: "Live",
     category: "Full-Stack"
